@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "llm-bits"
+version = "0.1.0"
+description = "Bits and pieces of code for an OpenAI LLM project"
+authors = ["Kostyantyn Kravchenko <kcostya@gmail.com>"]
+readme = "README.md"
+packages = [{include = "llm_bits"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+python-dotenv = "*"
+openai = "*"
+redlines = "^0.4.0"
+panel = "^1.2.1"
+langchain = "*"
+tiktoken = "*"
+
+[tool.poetry.dev-dependencies]
+jupyter = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
